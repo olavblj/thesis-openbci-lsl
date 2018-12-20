@@ -123,7 +123,7 @@ class DummyLSL:
         self.state = self.STOPPING
         print("Streaming stopped.\n")
 
-    def begin(self):
+    def begin(self, autostart=False):
         print("--------------INFO---------------")
         print(
             "Commands: \n" + \
@@ -137,6 +137,9 @@ class DummyLSL:
         # s: stop board streaming; v: soft reset of the 32-bit board (no effect with 8bit board)
 
         s = 'sv'
+
+        if autostart:
+            s = "/start"
 
         while s != "/exit":
             # Send char and wait for registers to set

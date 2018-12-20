@@ -10,9 +10,6 @@ def main(argv):
         lsl = streamerlsl.StreamerLSL()
         lsl.create_lsl()
         lsl.begin(autostart=True)
-
-
-
     else:
         if argv[0] == '--dummy':
             lsl = DummyLSL()
