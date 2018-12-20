@@ -1,9 +1,8 @@
-thesis-openbci-lsl
-==============
+# thesis-openbci-lsl
 
 This is a modified version of [OpenBCI_LSL](https://github.com/OpenBCI/OpenBCI_LSL) for use in my master's thesis.
 
-# Initial Setup
+## Initial Setup
 
 Run these commands in your terminal
 
@@ -14,7 +13,7 @@ pip install -r requirements.txt
 ```
 
 
-# Usage
+## Usage
 
 1. Make sure an OpenBCI headset is connected using the Bluetooth dongle. Consider verifying that it is working by using the OpenBCI GUI application.
 2. Navigate to the root directory in your terminal
@@ -27,7 +26,7 @@ When running the program:
 * To start streaming data again, enter `/start`
 * To exit the program, enter `/exit`
 
-## Dummy data
+### Dummy data
 
 If you want to run the program without the OpenBCI headset, and just output dummy data, use the `--dummy` flag
 
@@ -35,7 +34,7 @@ If you want to run the program without the OpenBCI headset, and just output dumm
 python -m start_stream --dummy
 ```
 
-# Errors
+## Errors
 
 **Cannot find OpenBCI port**
 
